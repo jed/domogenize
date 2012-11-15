@@ -1,0 +1,20 @@
+{
+  "name": "domogenize",
+  "version": "0.1.0",
+  "description": "Turn static HTML and CSS into declarative JavaScript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jed/domogenize.git"
+  },
+  "author": "Jed Schmidt <tr@nslator.jp>",
+  "license": "MIT",
+  "dependencies": {
+    "cssom": "~0.2.5",
+    "escodegen": "0.0.15",
+    "domo": "~0.5.7"
+  },
+  "devDependencies": {
+    "request": "~2.12.0"
+  }
+}

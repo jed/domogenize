@@ -23,10 +23,17 @@ request({
 })
 ```
 
-to generate this file at `./ratchet.js`, which renders the identical styles as the original, from JavaScript:
+to generate this file at `./ratchet.js`, which looks something like the following, and renders the identical styles as the original, from JavaScript:
 
 ```javascript
-STYLE({ type: "text/css"},
+// snip
+var STYLE = require('domo').STYLE;
+
+module.exports =
+
+STYLE({ type: 'text/css' },
+  // ...
+
   STYLE.on('.bar-title .title a', { color: 'inherit' }),
 
   STYLE.on('.bar-tab', {
@@ -46,7 +53,9 @@ STYLE({ type: "text/css"},
     listStyle: 'none',
     WebkitBoxOrient: 'horizontal',
     boxOrient: 'horizontal'
-  })
+  }),
+
+  // ...
 )
 ```
 
